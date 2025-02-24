@@ -1,0 +1,108 @@
+@import 'bootstrap/bootstrap';
+@import 'bootstrap/variables';
+
+html {
+  /* overflow-x: hidden; */
+}
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #000000;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+body.menu-show {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+a {
+  transition: 0.3s all ease;
+  color: #ffbd39;
+}
+a:hover, a:focus {
+  text-decoration: none;
+  color: #ffbd39;
+  outline: none !important;
+}
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+}
+.text-primary {
+  color: #ffbd39 !important;
+}
+
+.ftco-navbar-light {
+  background: transparent !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+.navbar-brand {
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.hero h3.vr {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-orientation: sideways;
+  text-align: center;
+  margin: 0rem;
+  position: absolute;
+  top: 0;
+  left: 4em;
+  height: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-size: 16px;
+  z-index: 1;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.owl-carousel {
+  position: relative;
+}
+.owl-carousel .owl-item {
+  opacity: 0.4;
+}
+.owl-carousel .owl-item.active {
+  opacity: 1;
+}
+.owl-carousel .owl-dots {
+  text-align: center;
+}
+.owl-carousel .owl-dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.9);
+  position: relative;
+}
+.owl-carousel .owl-dot:after {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: 0;
+  bottom: 0;
+  width: 14px;
+  height: 14px;
+  content: '';
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+.owl-carousel .owl-dot:hover, .owl-carousel .owl-dot:focus {
+  outline: none !important;
+}
+.owl-carousel .owl-dot.active {
+  background: rgba(0, 0, 0, 0.7);
+}
